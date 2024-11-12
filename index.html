@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            /* overflow-x: hidden; */
+
+        }
+
+        body {
+            background-color: silver;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100vw;
+            height: 70vh;
+            background-color: rgb(17, 17, 17);
+            color: white;
+        }
+
+        header .navbar {
+            /* background-color: red; */
+            width: 95%;
+            height: 15%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            border-bottom: 0.5px solid gray;
+        }
+
+        .navbar .menu-links {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        .navbar .menu-links a {
+            text-decoration: none;
+            color: rgb(199, 183, 183);
+
+        }
+
+        .navbar .menu-links a:hover {
+            color: white;
+            /* border-left: .3px solid white;
+            border-right: .3px solid white; */
+
+        }
+
+        .navbar .logo {
+            /* background-color: aqua; */
+            width: 30%;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+        }
+
+        .navbar .logo:hover {
+            /* background-color: aqua; */
+            color: rgb(250, 12, 12);
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .navbar .search-bar {
+            /* background-color: blue; */
+            width: 20%;
+
+        }
+
+        .navbar .search-bar input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            text-align: right;
+            font-size: 1rem;
+            padding: 10px;
+            color: white;
+        }
+
+        .header-content {
+            /* background-color: red; */
+            width: 40vw;
+            margin: auto;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-content h1 {
+            margin-top: 40px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .header-content p {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(199, 183, 183);
+
+        }
+
+
+        .main-content {
+            width: 90vw;
+            margin: 60px auto;
+            height: 70%;
+            /* background-color: red; */
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+        }
+
+        .main-content .boxes {
+            width: 380px;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: blue; */
+            border-radius: .6rem;
+            border: none;
+            font-size: .9rem;
+            font-weight: 400;
+            color: rgb(37, 36, 36);
+
+
+
+        }
+
+        
+
+        .main-content .box1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 12px;
+        }
+        .main-content .box1 p{
+            font-size: .8rem;
+            color: rgb(128, 124, 124);
+            margin-bottom: 6px;
+        }
+        .main-content .box2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 12px;
+        }
+
+        .main-content .box2 p{
+            font-size: .8rem;
+            color: rgb(128, 124, 124);
+            margin-bottom: 6px;
+        }
+        .main-content .box3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 12px;
+        }
+        .main-content .box3 p{
+            font-size: .8rem;
+            color: rgb(128, 124, 124);
+            margin-bottom: 6px;
+        }
+
+        .main-content .boxes img {
+            border-radius: .6rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <p>One Page Love</p>
+            </div>
+
+            <div class="menu-links">
+                <a href="">Insipration</a>
+                <a href="">Templates</a>
+                <a href="">Resources</a>
+                <a href="">Info</a>
+                <a href="">Hire</a>
+                <a href="">Build a One Pager</a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="search">
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>One Page websites, curated.</h1>
+            <p>Since 2008, we've curated 8535 One Pagers. Learn about One Page websites or submit to get featured to
+                150k visitors each month.</p>
+        </div>
+
+        <div class="main-content">
+            <div class="boxes box1">
+                <img src="assets/card-1.jpg" alt="" width="100%" height="100%">
+                <h3>One Pagers using GSAP</h3>
+                <p>Featured Collection</p>
+
+            </div>
+
+            <div class="boxes box2">
+                <img src="assets/card-2.jpg" alt="" width="100%" height="100%">
+                <h3>No customers? 5 ways to boost social proof</h3>
+                <p>Featured Tutorial</p>
+
+            </div>
+            <div class="boxes box3">
+                <img src="assets/card-3.jpeg" alt="" width="100%" height="100%">
+                <h3>Take control in a completely visual canvas</h3>
+                <p>Recommended</p>
+
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
